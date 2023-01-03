@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}                           
+
+.section{
+    width: 100%;
+    background-color: #F9F9F9;
+    margin: auto;
+}
+.section .container {
+    width: 95%;
+    text-align: center;
+    padding: 60px 0px;
+}
+.section .container h2{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.section .container h2::after{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    min-height: 2px;
+    background-color: #0C65ED;
+    margin-left: 25px;
+}
+.section .container h2::before{
+    content: "";
+    display: inline-block;
+    width: 80px;
+    min-height: 2px;
+    background-color: #0C65ED;
+    margin-right: 25px;
+}
+.section .container p:first-of-type{
+    width: 80%;
+    font-size: 17px;
+    color: #666666;
+    margin: auto;
+}
+.section .container .content {
+    margin-top: 30px;
+    width: 31%;
+    float: left;
+    margin: 30px 10px 10px 10px;
+}
+.section .container .content:hover .info .icons i{
+    background-color: #0C65ED;
+    cursor: pointer;
+}
+.section .container .content:hover .image img{
+    transform: scale(1.2) rotate(-10deg);
+}
+.section .container .content .image{
+    width: 100%;
+    overflow: hidden;
+}
+.section .container .content .image img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+.section .container .content .info{
+    background-color: #FFF;
+}
+.section .container .content .info .icons{
+    float: left;
+    width: 11%;
+}
+.section .container .content .info .icons i{
+    display: block;
+    background-color: #000;
+    color: #FFF;
+    font-size: 20px;
+    padding: 19px 5px;
+    transition: background-color 0.5s;
+}
+.section .container .content .info .icons i:hover{
+    color: #6387bc;
+    cursor: pointer;
+}
+.section .container .content .info .imginfo {
+    float: left;
+    width: 87%;
+    padding: 20px;
+    text-align: start;
+}
+.section .container .content .info .imginfo h3{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: color 0.5s;
+}
+.section .container .content .info .imginfo h3:hover{
+    color: #0C65ED;
+    cursor: pointer;
+}
+.section .container .content .info .imginfo p:first-of-type{
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.section .container .content .info .imginfo p:first-of-type span:nth-of-type(2){
+    padding: 0px 20px;
+}
+.section .container .content .info .imginfo p:first-of-type span{
+    transition: color 0.5s;
+}
+.section .container .content .info .imginfo p:first-of-type span:hover{
+    color: #0C65ED;
+    cursor: pointer;
+}
+.section .container .content .info .imginfo p i{
+    padding-right: 7px;
+}
+.section .container .content .info .imginfo p:last-of-type{
+    font-size: 18px;
+    color: rgb(133, 132, 132);
+}
+.section .container .content .info .imginfo a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 40px;
+}
+.section .container .content .info .imginfo a i{
+    padding-left: 5px;
+    transition: padding-left 1s ;
+    font-size: 18px;
+}
+.section .container .content .info .imginfo a:hover i{
+    padding-left: 20px;
+}
+.section .container .content .info .imginfo hr {
+    height: 1px;
+    background-color: #0C65ED;
+    opacity: 1;
+    width: 30%;
+    transition: width 1s ;
+}
+.section .container .content:hover .info .imginfo hr{
+    width: 100%;
+}
+.clearfixed{
+    clear: left;
+}
